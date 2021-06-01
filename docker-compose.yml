@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  blog-entry-manager-grpc-server:
+    build:
+      context: .
+    ports:
+      - 30008:30008
+    env_file:
+      - creds.env
